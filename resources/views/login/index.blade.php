@@ -8,40 +8,11 @@
     <title>REBCLASSTWO | {{ $title }}</title>
     {{-- icon --}}
     <script src="https://unpkg.com/feather-icons"></script>
-    {{-- style --}}
-    <link rel="stylesheet" href="/css/style.css">
-    {{-- icon --}}
-    <script src="https://unpkg.com/feather-icons"></script>
-    {{-- Tailwind css cdn --}}
-    <script src="https://cdn.tailwindcss.com"></script>
-    {{-- FLowbite Cdn --}}
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.5/flowbite.min.css" rel="stylesheet" />
-    {{-- Config --}}
-    <script>
-        tailwind.config = {
-            theme: {
-                container: {
-                    center: true,
-                    padding: "20px",
-                },
-                extend: {
-                    colors: {
-                        primary: "#0ea5e9",
-                        dark: "#0f172a",
-                        secondary: "#64748b",
-                        dangger: "#ef4444",
-                    },
-                    screens: {
-                        "2xl": "1320px",
-                    },
-                },
-            },
-        }
-    </script>
+    @vite(['resources/css/app.css', 'resources/js/app.js'])
 </head>
 
 <body>
-    <main class="bg-dark">
+    <main class="bg-dark w-full">
         <div class="container ">
             <div class="flex h-screen justify-center items-center">
                 <div class="w-full px-4 py-4 border rounded-lg border-black md:w-1/3 shadow-lg bg-white">
